@@ -1,3 +1,28 @@
+# YouTube AI Studio — Automated Video Content Production
+
+An AI system that produces content for a YouTube channel end to end. The channel's niche is the daily life of a shepherd in a village in Lachin, Azerbaijan: rural life and recipes cooked at camp.
+
+## How it works
+- **Phase 1 (done)** — generates topics and scripts with LLMs; every script is approved in Telegram before production
+- **Phase 2 (current)** — turns approved scripts into full videos: AI visuals (fal.ai or Pollinations with a Ken Burns effect), Azerbaijani voice-over (edge-tts) and assembly with ffmpeg, followed by a second approval in Telegram
+- **Next** — sound effects and automatic YouTube upload
+
+## Key features
+- Multi-provider LLM router (Gemini, Groq, local Ollama) with automatic fallback
+- Quality checks on generated scripts, with automatic retries
+- Daily scheduled generation
+- Human-in-the-loop approval through a Telegram bot
+
+## Tech stack
+Python · LLMs (Gemini / Groq / Ollama) · fal.ai · edge-tts · ffmpeg · SQLite · Telegram Bot API
+
+## Getting started
+See the setup steps below: create a virtual environment, install `requirements.txt`, fill in `.env` and run `python main.py`.
+
+---
+
+## Azərbaycan dilində
+
 # youtube-ai-studio
 
 AI ilə YouTube kanalı üçün avtomatik məzmun istehsalı sistemi. Kanal nişi: Laçının
